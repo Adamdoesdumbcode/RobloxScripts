@@ -79,7 +79,7 @@ local Input = MainTab:CreateInput({
         if repeats and repeats > 0 then
             for i = 1, repeats do
                 local args = {
-                    [1] = 0 -- Example fixed value; replace as needed
+                    [1] = 1 -- Example fixed value; replace as needed
                 }
                 game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("HealthAdd"):FireServer(unpack(args))
                 wait(0.001) -- Optional: Prevent event spamming
