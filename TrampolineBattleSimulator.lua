@@ -1,12 +1,198 @@
-local v0=loadstring(game:HttpGet("https://sirius.menu/rayfield"))();local v1=v0:CreateWindow({Name="Trampoline Battle Sim - Stami",Icon=0 -0 ,LoadingTitle="Trampoline Battle Sim Script",LoadingSubtitle="by Stami",Theme="Amethyst",DisableRayfieldPrompts=false,DisableBuildWarnings=false,ConfigurationSaving={Enabled=false,FolderName=nil,FileName="StamiHUBB"},Discord={Enabled=true,Invite="g8QnUE5BS4",RememberJoins=false},KeySystem=true,KeySettings={Title="Stami Key",Subtitle="tramp battle sim",Note="go to discord g8QnUE5BS4",FileName="stamskiKey",SaveKey=true,GrabKeyFromSite=false,Key={"ImagineIfNinjaGotALowTaperFade"}}});local v2=v1:CreateTab("Credits","Badge");local v3=v2:CreateSection("CREDITS 👑: Stami");local v3=v2:CreateSection("Discord:g8QnUE5BS4");local v4=v1:CreateTab("Cheats","Square-User");local v5=v4:CreateInput({Name="Give JumpPower",CurrentValue="",PlaceholderText="Give Power",RemoveTextAfterFocusLost=true,Flag="GiveJP",Callback=function(v9) local v10=430 -(44 + 386) ;local v11;while true do if (v10==(1486 -(998 + 488))) then v11={[1 + 0 ]=v9};game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Train"):FireServer(unpack(v11));break;end end end});local v5=v4:CreateInput({Name="Give Wins",CurrentValue="",PlaceholderText="Give Wins",RemoveTextAfterFocusLost=true,Flag="Givewinss",Callback=function(v12) local v13=0 -0 ;local v14;while true do if (v13==(0 -0)) then v14={[1 + 0 ]=v12};game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("WinGain"):FireServer(unpack(v14));break;end end end});local v5=v4:CreateInput({Name="Give Rebirths",CurrentValue="",PlaceholderText="Give Rebirths",RemoveTextAfterFocusLost=true,Flag="GiveRebirth",Callback=function(v15) local v16=772 -(201 + 571) ;local v17;while true do if (v16==(1138 -(116 + 1022))) then v17=tonumber(v15);if (v17 and (v17>(0 -0))) then for v48=1 + 0 ,v17 do local v49=0 -0 ;local v50;while true do if ((3 -2)==v49) then wait(836.001 -(660 + 176) );break;end if (v49==(0 + 0)) then v50={[203 -(14 + 188) ]=675 -(534 + 141) };game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("HealthAdd"):FireServer(unpack(v50));v49=860 -(814 + 45) ;end end end else print("Invalid input! Please enter a positive integer.");end break;end end end});local v6=v4:CreateButton({Name="Give Best Power",Callback=function() local v18=0;local v19;while true do if (v18==(2 -1)) then v19={[1 + 0 ]="Gust",[1 + 1 ]=game.Players.LocalPlayer.Character};game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("EquipEffect"):FireServer(unpack(v19));break;end if (v18==(885 -(261 + 624))) then v19={[1 -0 ]="Gust",[2 -0 ]=0 -0 };game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("BuyPower"):FireServer(unpack(v19));v18=1081 -(1020 + 60) ;end end end});local v6=v4:CreateButton({Name="Enchant Power",Callback=function() local v20=1423 -(630 + 793) ;local v21;while true do if ((0 -0)==v20) then v21={[4 -3 ]=0,[1 + 1 ]=0.15 -0 };game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Enchanted"):FireServer(unpack(v21));break;end end end});local v3=v4:CreateSection("Misc");local v7=v4:CreateSlider({Name="Walk Speed",Range={1929 -(1789 + 124) ,104 + 196 },Increment=2 -1 ,Suffix="WalkSpeed",CurrentValue=62 -46 ,Flag="WSSlider",Callback=function(v22) game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed=v22;end});local v6=v4:CreateButton({Name="Destroy GUI",Callback=function() v0:Destroy();end});local v8=v1:CreateTab("Teleport","Rewind");local v3=v8:CreateSection("Teleport Menu");local v6=v8:CreateButton({Name="Island 1: Grass",Callback=function() local v24=0 + 0 ;local v25;local v26;local v27;while true do if (v24==(0 + 0)) then v25=game.Players.LocalPlayer;v26=v25.Character or v25.CharacterAdded:Wait() ;v24=1666 -(970 + 695) ;end if (v24==(1056 -(87 + 968))) then v27=v26:WaitForChild("HumanoidRootPart");v27.CFrame=CFrame.new(167.6598549 -129 ,38.2589111, -(112.562393 + 11), -(0.0207716227 -0), -5.741918e-9,0.999784231 -0 , -(1413.0000000308116 -(447 + 966)),1,5.103012e-9 -0 , -(1817.999784231 -(1703 + 114)), -(701.000000030699 -(376 + 325)), -(241.0207716227 -(187 + 54)));break;end end end});local v6=v8:CreateButton({Name="Island 2: Ice",Callback=function() local v28=780 -(162 + 618) ;local v29;local v30;local v31;while true do if (v28==(1 + 0)) then v31=v30:WaitForChild("HumanoidRootPart");v31.CFrame=CFrame.new(30.831809999999997 + 15 ,80.2589111 -42 ,3498.16235 -1363 ,0.376577675 -0 , -(1.06928844e-7 + 0),0.926385045 -0 ,5.2126307e-8,15 -(9 + 5) ,376.00000009423644 -(85 + 291) , -(1265.926385045 -(243 + 1022)),1.2801689e-8,0.376577675 + 0 );break;end if ((0 -0)==v28) then v29=game.Players.LocalPlayer;v30=v29.Character or v29.CharacterAdded:Wait() ;v28=1 + 0 ;end end end});local v6=v8:CreateButton({Name="Island 3: Beach",Callback=function() local v32=0 -0 ;local v33;local v34;local v35;while true do if ((1180 -(1123 + 57))==v32) then local v44=0 + 0 ;while true do if ((0 + 0)==v44) then v33=game.Players.LocalPlayer;v34=v33.Character or v33.CharacterAdded:Wait() ;v44=342 -(218 + 123) ;end if (v44==(255 -(163 + 91))) then v32=1582 -(1535 + 46) ;break;end end end if (v32==(1931 -(1869 + 61))) then v35=v34:WaitForChild("HumanoidRootPart");v35.CFrame=CFrame.new(3.2265882500000007 + 5 ,105.1036701 -75 ,7999.50293 -2791 , -(0.169463098 -0),1.927005e-8 + 0 ,0.985536516, -(1.7622636e-8 + 0),1, -(2.2583066e-8 -0), -(0.985536516 -0), -(2.1194747e-8 + 0), -0.169463098);break;end end end});local v6=v8:CreateButton({Name="Island 4: Hell",Callback=function() local v36=1474 -(1329 + 145) ;local v37;local v38;local v39;while true do if (v36==(971 -(140 + 831))) then v37=game.Players.LocalPlayer;v38=v37.Character or v37.CharacterAdded:Wait() ;v36=1 + 0 ;end if (v36==(1851 -(1409 + 441))) then v39=v38:WaitForChild("HumanoidRootPart");v39.CFrame=CFrame.new(727.46756458 -(15 + 703) ,14.321434 + 16 ,7959.72998 -(262 + 176) ,0.419752121 + 0 , -(1721.0000000129162 -(345 + 1376)),1251.907638788 -(721 + 530) , -(1271.0000000073617 -(945 + 326)),1,688.0000000176351 -(198 + 490) , -(0.907638788 + 0), -(1.4084097e-8 -0),0.419752121 -0 );break;end end end});
--- ⚠️ WARNING: integrity protected!
---[[
- .____                  ________ ___.    _____                           __                
- |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
- |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
- |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
- |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
-         \/          \/         \/    \/                \/     \/     \/                   
-          \_Welcome to LuaObfuscator.com   (Alpha 0.10.8) ~  Much Love, Ferib 
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
-]]--
+local Window = Rayfield:CreateWindow({
+    Name = "Trampoline Battle Sim - Stami",
+    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+    LoadingTitle = "Trampoline Battle Sim Script",
+    LoadingSubtitle = "by Stami",
+    Theme = "Amethyst", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+    DisableRayfieldPrompts = false,
+    DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+
+    ConfigurationSaving = {
+        Enabled = false,
+        FolderName = nil, -- Create a custom folder for your hub/game
+        FileName = "StamiHUBB"
+    },
+
+    Discord = {
+        Enabled = true, -- Prompt the user to join your Discord server if their executor supports it
+        Invite = "g8QnUE5BS4", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+        RememberJoins = false -- Set this to false to make them join the discord every time they load it up
+    },
+
+    KeySystem = true, -- Set this to true to use our key system
+    KeySettings = {
+        Title = "Stami Key",
+        Subtitle = "tramp battle sim",
+        Note = "go to discord g8QnUE5BS4", -- Use this to tell the user how to get a key
+        FileName = "stamskiKey", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+        SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+        GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+        Key = {"ImagineIfNinjaGotALowTaperFade"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello", "key22")
+    }
+})
+
+local CreditsTab = Window:CreateTab("Credits", "Badge")
+local Section = CreditsTab:CreateSection("CREDITS 👑: Stami")
+local Section = CreditsTab:CreateSection("Discord:g8QnUE5BS4")
+
+local MainTab = Window:CreateTab("Cheats", "Square-User") -- Title, Image
+
+local Input = MainTab:CreateInput({
+    Name = "Give JumpPower",
+    CurrentValue = "",
+    PlaceholderText = "Give Power",
+    RemoveTextAfterFocusLost = true,
+    Flag = "GiveJP",
+    Callback = function(Text)
+        local args = {
+            [1] = Text
+        }
+        game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Train"):FireServer(unpack(args))
+    end,
+})
+
+local Input = MainTab:CreateInput({
+    Name = "Give Wins",
+    CurrentValue = "",
+    PlaceholderText = "Give Wins",
+    RemoveTextAfterFocusLost = true,
+    Flag = "Givewinss",
+    Callback = function(Text)
+        local args = {
+            [1] = Text
+        }
+        game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("WinGain"):FireServer(unpack(args))
+    end,
+})
+
+local Input = MainTab:CreateInput({
+    Name = "Give Rebirths",
+    CurrentValue = "",
+    PlaceholderText = "Give Rebirths",
+    RemoveTextAfterFocusLost = true,
+    Flag = "GiveRebirth",
+    Callback = function(Text)
+        local repeats = tonumber(Text) -- Convert input to number
+        if repeats and repeats > 0 then
+            for i = 1, repeats do
+                local args = {
+                    [1] = 0 -- Example fixed value; replace as needed
+                }
+                game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("HealthAdd"):FireServer(unpack(args))
+                wait(0.001) -- Optional: Prevent event spamming
+            end
+        else
+            print("Invalid input! Please enter a positive integer.")
+        end
+    end,
+})
+
+local Button = MainTab:CreateButton({
+    Name = "Give Best Power",
+    Callback = function()
+        local args = {
+            [1] = "Gust",
+            [2] = 0
+        }
+
+        game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("BuyPower"):FireServer(unpack(args))
+        
+        -- Now using the player running the script (LocalPlayer)
+        local args = {
+            [1] = "Gust",
+            [2] = game.Players.LocalPlayer.Character -- This now targets the player's character
+        }
+
+        game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("EquipEffect"):FireServer(unpack(args))
+
+    end,
+})
+
+
+local Button = MainTab:CreateButton({
+    Name = "Enchant Power",
+    Callback = function()
+        local args = {
+            [1] = 0,
+            [2] = 0.15
+        }
+        
+        game:GetService("ReplicatedStorage"):WaitForChild("Event"):WaitForChild("Enchanted"):FireServer(unpack(args))
+        
+    end,
+})
+
+local Section = MainTab:CreateSection("Misc")
+
+local Slider = MainTab:CreateSlider({
+    Name = "Walk Speed",
+    Range = {16, 300},
+    Increment = 1,
+    Suffix = "WalkSpeed",
+    CurrentValue = 16,
+    Flag = "WSSlider", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(Value)
+        game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = Value
+    end,
+})
+
+local Button = MainTab:CreateButton({
+    Name = "Destroy GUI",
+    Callback = function()
+        Rayfield:Destroy()
+    end,
+})
+
+local TpTab = Window:CreateTab("Teleport", "Rewind") -- Title, Image
+local Section = TpTab:CreateSection("Teleport Menu")
+local Button = TpTab:CreateButton({
+    Name = "Island 1: Grass",
+    Callback = function()
+        local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+
+-- Now set the CFrame
+humanoidRootPart.CFrame = CFrame.new(38.6598549, 38.2589111, -123.562393, -0.0207716227, -5.74191805e-09, 0.999784231, -3.08116022e-08, 1, 5.10301179e-09, -0.999784231, -3.06989563e-08, -0.0207716227)
+
+    end,
+})
+
+local Button = TpTab:CreateButton({
+    Name = "Island 2: Ice",
+    Callback = function()
+        local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+
+-- Now set the CFrame
+humanoidRootPart.CFrame = CFrame.new(45.83181, 38.2589111, 2135.16235, 0.376577675, -1.06928844e-07, 0.926385045, 5.21263068e-08, 1, 9.42364551e-08, -0.926385045, 1.28016886e-08, 0.376577675)
+    end,
+})
+
+local Button = TpTab:CreateButton({
+    Name = "Island 3: Beach",
+    Callback = function()
+        local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+
+-- Now set the CFrame
+humanoidRootPart.CFrame = CFrame.new(8.22658825, 30.1036701, 5208.50293, -0.169463098, 1.92700504e-08, 0.985536516, -1.76226358e-08, 1, -2.25830661e-08, -0.985536516, -2.11947473e-08, -0.169463098)
+    end,
+})
+
+local Button = TpTab:CreateButton({
+    Name = "Island 4: Hell",
+    Callback = function()
+        local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+
+-- Now set the CFrame
+humanoidRootPart.CFrame = CFrame.new(9.46756458, 30.321434, 7521.72998, 0.419752121, -1.29162352e-08, 0.907638788, -7.36165573e-09, 1, 1.76351058e-08, -0.907638788, -1.40840974e-08, 0.419752121)
+    end,
+})
